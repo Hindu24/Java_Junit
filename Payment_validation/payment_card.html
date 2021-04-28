@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Payment</title>
+<script type="text/javascript" src="app/jquery-3.6.0.js">
+</script>
+</head>
+<body>
+<form name="form" action="payment.html" method="post">
+<section>
+<h2>Personal information</h2>
+
+
+<span>Name:</span>
+
+<select>
+<option value="Mr">Mr</option>
+<option value="Ms">Ms</option>
+<option value="Mrs">Mrs</option>
+</select>
+
+<input type="text" id="name" name="Name">
+
+<p><label for="num">
+<span>Contact number:</span>
+</label><input type="number" id="num" name="Contact number"></p>
+
+ <label for="email">Enter Email: </label>
+  <input type="email" id="email" name="email" required><br/><br/>
+  
+  <label for="password">Enter Password: </label>
+  <span class="required">*</span>
+  <input type="password" id="password" name="password" pattern="^(?=.\d)(?=.[a-z])(?=.[A-Z])(?!.\s)(?=.\w{6,8}$").*$" placeholder="6-8 characters" title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."   ><br/><br/>
+  
+  
+  <input type = "submit" value = "Submit" id="savebt">
+  <input type="reset" value="CLEAR" id="btnReset">
+
+
+</section>
+
+
+ </form>
+             
+</body>
+</html>
